@@ -25,9 +25,9 @@ USE employees;
 --     (MONTH(birth_date) = 12
 --     AND DAY(birth_date) = 25)
 -- AND YEAR(hire_date) BETWEEN 1990 AND 1999 ORDER BY hire_date DESC, birth_date DESC;
-
-SELECT CONCAT(first_name, ' ', last_name, ' has worked ' ,DATEDIFF(CURRENT_DATE, hire_date), ' days at the company') FROM employees WHERE
-        (MONTH(birth_date) = 12
-            AND DAY(birth_date) = 25)
-        AND YEAR(hire_date) BETWEEN 1990 AND 1999;
+--
+-- SELECT CONCAT(first_name, ' ', last_name, ' has worked ' ,DATEDIFF(CURRENT_DATE, hire_date), ' days at the company') FROM employees WHERE
+--         (MONTH(birth_date) = 12
+--             AND DAY(birth_date) = 25)
+--         AND YEAR(hire_date) BETWEEN 1990 AND 1999;
 
