@@ -1,0 +1,22 @@
+Riddle me this: what would be the best relationship and why?
+  - in a dating app: users and user_profiles
+        one to one: each user is gonna have one profile
+
+  - in an online marketplace: orders and products
+        many to many: multiple orders are placed and each order contains different products in each, orders vary in size and products table go to inventory table
+
+        one to many: youd want one order to have unique many products
+        many products can have many orders and many orders can have many products
+
+  - in a blog application: users and posts
+        one to many: one user can make many different posts on that account
+
+  - in a social media app: users and groups
+        many to many: many users can have many groups and many groups can have many users
+
+  - in an app for professional networking: businesses and addresses
+        one to many: one business can have addresses and locations
+
+  - in a dog walking app: pet_records and pet_owners
+        one to many: owners can have multiple pets but each pet has their own unique records
+
