@@ -39,3 +39,15 @@ USE employees;
 -- ON salaries.emp_no = employees.emp_no
 -- WHERE year(dept_manager.to_date) = 9999
 -- AND year(salaries.to_date) = 9999;
+
+-- BONUS: Find the names of all current employees, their department name, and their current manager's name
+-- SELECT CONCAT(first_name, ' ', last_name) AS 'Employee', departments.dept_name AS 'Department', CONCAT(first_name, ' ', last_name) AS 'Manager'
+-- FROM employees
+-- JOIN dept_emp
+-- ON dept_emp.emp_no = employees.emp_no
+-- JOIN departments
+-- ON departments.dept_no = dept_emp.dept_no
+-- JOIN dept_manager
+-- ON dept_manager.dept_no = dept_emp.dept_no
+-- WHERE YEAR(dept_emp.to_date) = 9999
+-- AND YEAR(dept_manager.to_date) = 9999;
